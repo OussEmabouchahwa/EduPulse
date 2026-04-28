@@ -1,3 +1,53 @@
-body {
-    background-color: skyblue;
+@import "tailwindcss";
+@plugin "flyonui";
+
+@theme {
+    /* 1. BRAND COLORS (Electric Indigo Palette) */
+    --color-brand-softer: #EEF2FF;
+    /* Indigo 50 */
+    --color-brand-soft: #E0E7FF;
+    /* Indigo 100 */
+    --color-brand: #6366F1;
+    /* TON INDIGO PRINCIPAL */
+    --color-brand-medium: #4F46E5;
+    /* Indigo 600 */
+    --color-brand-strong: #4338CA;
+    /* Indigo 700 */
+    --color-brand-light: #818CF8;
+    /* Indigo 400 pour les bordures */
+
+    /* 2. NEUTRAL COLORS (Slate/Dark Mode Palette) */
+    --color-neutral-primary: #FFFFFF;
+    --color-neutral-secondary: #F8FAFC;
+    /* Slate 50 */
+    --color-neutral-tertiary: #F1F5F9;
+    /* Slate 100 */
+    --color-neutral-quaternary: #E2E8F0;
+    /* Slate 200 */
+
+    /* Dark Mode Surfaces */
+    --color-dark-soft: #1E293B;
+    /* Slate 800 (Surface Card/Chat) */
+    --color-dark: #020617;
+    /* Slate 950 (Fond App) */
+
+    /* 3. TEXT COLORS (Foreground) */
+    --color-body: #334155;
+    /* Slate 700 */
+    --color-heading: #0F172A;
+    /* Slate 900 */
+    --color-fg-brand: #6366F1;
+    --color-fg-indigo: #6366F1;
+
+    /* 4. STATUS COLORS (Success = Emerald) */
+    --color-success: #10B981;
+    --color-fg-success: #059669;
+
+    /* 5. FONTS & RADIUS (Modern Chat Style) */
+    --font-sans: 'Inter', sans-serif;
+    --font-body: 'Inter', sans-serif;
+
+    /* On arrondit un peu plus pour le côté Messenger */
+    --radius-base: 14px;
+    --radius-lg: 20px;
 }
