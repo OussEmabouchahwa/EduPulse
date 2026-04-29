@@ -2,19 +2,22 @@
 <html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
-    <title>{% block title %}Restaurant - FlyonUI{% endblock %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}EduPulse — Apprenez au rythme de l'instant{% endblock %}</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     {% block stylesheets %}
         {{ importmap('app') }}
     {% endblock %}
 </head>
-<body class="bg-base-100">
+<body class="bg-base-100 font-inter">
+    {# Make sure this file exists in templates/_partials/ #}
     {{ include('_partials/_navbar.html.twig') }}
     
     {% block body %}{% endblock %}
 
-    {% block javascripts %}
-    {% endblock %}
+    {# FlyonUI requires JS for carousels and interactive components #}
+    <script src="https://cdn.jsdelivr.net/npm/flyonui@latest/dist/js/flyonui.js"></script>
+    {% block javascripts %}{% endblock %} 
 </body>
 </html>
